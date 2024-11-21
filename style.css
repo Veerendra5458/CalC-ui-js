@@ -1,0 +1,142 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("body-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.calculator{
+    position:absolute;
+    top: 20%;
+    left: 20%;
+    height: 70%;
+    width: 60%;
+    background-color: rgb(34, 33, 33);
+    display: flex;
+    align-items: center;
+}
+
+.row-height{
+    height:20%;
+    justify-content: space-evenly;
+}
+
+.container{
+    height: 86%;
+    width: 60%;
+}
+
+button{
+    height: 60%;
+    width: 20%;
+    background-color: transparent;
+    border: none;
+    border-radius: 9%;
+    transition: all;
+    cursor: pointer;
+    transition-delay: 10ms;
+}
+
+button:hover{
+    background-color: rgb(68, 65, 65);
+}
+button:active{
+    background-color: rgb(44, 42, 42);
+}
+
+button a{
+    text-decoration: none;
+    font-size: xx-large;
+    color: white;
+
+}
+
+#Equalsto{
+    width:45%;
+}
+
+.output-screen{
+    position : absolute;
+    top: 25%;
+    left: 60%;
+    width: 30%;
+    height: 60%;
+    background-color: beige;
+    z-index: 1;
+}
+
+#horizontal-line{
+    border: 2x solid black;
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    width: 80%
+}
+
+.inputbox{
+    /* background-color: red; */
+    height: 50%;
+    width: 80%;
+    position: absolute;
+    top: 8%;
+    
+}
+
+#inputarea{
+    height: 99%;
+    width:99%;
+    font-size: 3rem;
+    background-color: transparent;
+    border: none;
+    text-align: right;
+}
+
+.final{
+    height: 30%;
+    width: 100%;
+    position: absolute;
+    top: 63%;   
+    /* background-color: brown; */
+}
+
+#outputarea{
+    height: 99%;
+    width: 80%;
+    text-align: center;
+    font-size: 3rem;
+    background-color: transparent;
+    border: none;
+}
+
+@media(max-width:1000px){
+    .container{
+        width: 100%;
+        height: 80%;
+    }
+
+    .output-screen{
+        top:15%;
+        left: 25%;
+        height: 13%;
+        width:50%
+    }
+
+
+    #inputarea,#outputarea{
+        width:80%;
+        font-size:2rem ;
+    }
+}
